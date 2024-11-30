@@ -14,6 +14,7 @@ def create_db():
         ''')
         conn.commit()
 
+
 def add_user(username, email, password):
     try:
         with sqlite3.connect(DB_NAME) as conn:
